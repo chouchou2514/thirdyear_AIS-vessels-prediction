@@ -1,21 +1,21 @@
 # 🚢 Prédiction de la Trajectoire d'un Navire (AIS)
 
-Ce projet permet de prédire la position future d’un navire (**latitude** et **longitude**) à partir de ses paramètres de navigation actuels, en utilisant un modèle **Random Forest** préalablement entraîné[cite: 3].
+Ce projet permet de prédire la position future d’un navire (**latitude** et **longitude**) à partir de ses paramètres de navigation actuels, en utilisant un modèle **Random Forest** préalablement entraîné.
 
 ## 🧠 Modèle et Fonctionnement
 
-Le modèle utilisé est une **Random Forest** entraînée pour prédire les variations de coordonnées (**delta_LAT** et **delta_LON**)[cite: 5]. [cite_start]Pour optimiser la précision, le script utilise les caractéristiques suivantes[cite: 6]:
+Le modèle utilisé est une **Random Forest** entraînée pour prédire les variations de coordonnées (**delta_LAT** et **delta_LON**). Pour optimiser la précision, le script utilise les caractéristiques suivantes:
 
-* **Vitesse sur le fond** (`SOG`)[cite: 6].
-* **Cap sur le fond** (`COG`) — transformé en composantes `sin` et `cos`[cite: 6].
-* **Cap vrai** (`Heading`) — transformé en composantes `sin` et `cos`[cite: 6].
+* **Vitesse sur le fond** (`SOG`).
+* **Cap sur le fond** (`COG`) — transformé en composantes `sin` et `cos`.
+* **Cap vrai** (`Heading`) — transformé en composantes `sin` et `cos`.
 
 ## 📂 Fichiers de modèles nécessaires
 
-Le dépôt doit contenir les fichiers de modèles pré-entraînés correspondant aux différents délais de prédiction[cite: 4]:
-* `random_forest_5.pkl` : Modèle pour une prédiction à **5 minutes**[cite: 4].
-* `random_forest_10.pkl` : Modèle pour une prédiction à **10 minutes**[cite: 4].
-* `random_forest_15.pkl` : Modèle pour une prédiction à **15 minutes**[cite: 4].
+Le dépôt doit contenir les fichiers de modèles pré-entraînés correspondant aux différents délais de prédiction:
+* `random_forest_5.pkl` : Modèle pour une prédiction à **5 minutes**.
+* `random_forest_10.pkl` : Modèle pour une prédiction à **10 minutes**.
+* `random_forest_15.pkl` : Modèle pour une prédiction à **15 minutes**.
 
 ## 🛠️ Bibliothèques requises
 
