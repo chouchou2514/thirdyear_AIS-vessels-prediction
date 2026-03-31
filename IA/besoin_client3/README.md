@@ -1,10 +1,10 @@
 # 🚢 Prédiction de la Trajectoire d'un Navire (AIS)
 
-[cite_start]Ce projet permet de prédire la position future d’un navire (**latitude** et **longitude**) à partir de ses paramètres de navigation actuels, en utilisant un modèle **Random Forest** préalablement entraîné[cite: 3].
+Ce projet permet de prédire la position future d’un navire (**latitude** et **longitude**) à partir de ses paramètres de navigation actuels, en utilisant un modèle **Random Forest** préalablement entraîné[cite: 3].
 
 ## 🧠 Modèle et Fonctionnement
 
-[cite_start]Le modèle utilisé est une **Random Forest** entraînée pour prédire les variations de coordonnées (**delta_LAT** et **delta_LON**)[cite: 5]. [cite_start]Pour optimiser la précision, le script utilise les caractéristiques suivantes[cite: 6]:
+Le modèle utilisé est une **Random Forest** entraînée pour prédire les variations de coordonnées (**delta_LAT** et **delta_LON**)[cite: 5]. [cite_start]Pour optimiser la précision, le script utilise les caractéristiques suivantes[cite: 6]:
 
 * [cite_start]**Vitesse sur le fond** (`SOG`)[cite: 6].
 * [cite_start]**Cap sur le fond** (`COG`) — transformé en composantes `sin` et `cos`[cite: 6].
