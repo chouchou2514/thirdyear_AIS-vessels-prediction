@@ -12,7 +12,7 @@ Le modèle utilisé est une **Random Forest** entraînée pour prédire les vari
 
 ## 📂 Fichiers de modèles nécessaires
 
-Le dépôt doit contenir les fichiers de modèles pré-entraînés correspondant aux différents délais de prédiction:
+Le dépôt doit contenir les fichiers de modèles pré-entraînés correspondant aux différents délais de prédiction (modèles pouvant être générés grâce aux scripts besoin_client3.py et l'excel de données présent dans le dossier compressé "DATA", car les modèles était trop lourds pour les importer sur github):
 * `random_forest_5.pkl` : Modèle pour une prédiction à **5 minutes**.
 * `random_forest_10.pkl` : Modèle pour une prédiction à **10 minutes**.
 * `random_forest_15.pkl` : Modèle pour une prédiction à **15 minutes**.
